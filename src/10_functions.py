@@ -2,7 +2,10 @@
 
 # YOUR CODE HERE
 def is_even(num):
-    return num % 2 == 0
+    if num % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
 
 
 # Read a number from the keyboard
@@ -12,7 +15,4 @@ num = int(num)
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
 # YOUR CODE HERE
-if is_even(num):
-    print("Even!")
-else:
-    print("Odd")
+print(is_even(num))

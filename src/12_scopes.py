@@ -22,6 +22,9 @@ def outer():
     y = 120
 
     def inner():
+
+        # Reaches into parent scopes
+        nonlocal y
         y = 999
 
     inner()
